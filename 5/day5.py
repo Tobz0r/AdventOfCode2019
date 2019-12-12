@@ -39,38 +39,28 @@ def part_1(data, noun=12,verb=2):
             print(noun)
             index += 2
         elif operation == 5:
-            noun = data[index + 1]
             if mode_1 == 0:
                 noun = data[int(data[index + 1])]
-            verb = data[index + 2]
             if mode_2 == 0:
                 verb = data[int(data[index + 2])]
-
             if int(noun) != 0:
                 index = int(verb)
             else:
                 index += 3
         elif operation == 6:
-            noun = data[index + 1]
             if mode_1 == 0:
                 noun = data[int(data[index + 1])]
-
-            verb = data[index + 2]
             if mode_2 == 0:
                 verb = data[int(data[index + 2])]
-
             if int(noun) == 0:
                 index = int(verb)
             else:
                 index += 3
         elif operation == 7:
-            noun = data[index + 1]
             if mode_1 == 0:
                 noun = data[int(data[index + 1])]
-            verb = data[index + 2]
             if mode_2 == 0:
                 verb = data[int(data[index + 2])]
-
             if int(noun) < int(verb):
                 data[int(data[index + 3])] = str(1).zfill(5)
             else:
@@ -78,14 +68,10 @@ def part_1(data, noun=12,verb=2):
 
             index += 4
         elif operation == 8:
-            noun = data[index + 1]
             if mode_1 == 0:
                 noun = data[int(data[index + 1])]
-
-            verb = data[index + 2]
             if mode_2 == 0:
                 verb = data[int(data[index + 2])]
-
             if int(noun) == int(verb):
                 data[int(data[index + 3])] = str(1).zfill(5)
             else:
