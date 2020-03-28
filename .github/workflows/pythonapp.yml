@@ -25,6 +25,6 @@ jobs:
         python -m pip install --upgrade pip
     - name: Lint with flake8
       run: |
-        pip install pylint
+        pip install flake8
         # stop the build if there are Python syntax errors or undefined names
-        pylint *.py
+        flake8 .
