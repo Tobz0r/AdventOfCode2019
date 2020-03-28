@@ -4,7 +4,6 @@ def read_input(filename):
 	with open('input.txt','r') as input:
 		input_str = input.read().split('\n')
 	data = [int(i) for i in input_str]
-	print("hej")
 	return data
 
 def part_1(data):
